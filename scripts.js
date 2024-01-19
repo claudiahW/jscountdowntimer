@@ -28,7 +28,7 @@ const giveaway = document.querySelector(".giveaway");
 const deadline = document.querySelector(".deadline");
 const items = document.querySelectorAll(".deadline-format h4");
 
-let futureDate = new Date(2024,7,24,11, 30,0);
+let futureDate = new Date(2024,7,27,11, 30,0);
 
 // extract these values one by one
 
@@ -38,5 +38,6 @@ const minutes = futureDate.getMinutes();
 
 let month = futureDate.getMonth();
 month = months[month];
+const date = futureDate.getDate();
 
-giveaway.textContent = `giveaway ends on ${month} ${year} ${hours}:${minutes}am`; 
+giveaway.textContent = `giveaway ends on ${date} ${month} ${year} ${hours}:${minutes}am`; 
