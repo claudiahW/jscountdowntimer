@@ -40,4 +40,15 @@ let month = futureDate.getMonth();
 month = months[month];
 const date = futureDate.getDate();
 
-giveaway.textContent = `giveaway ends on ${date} ${month} ${year} ${hours}:${minutes}am`; 
+const weekday = weekdays[futureDate.getDay()];
+
+giveaway.textContent = `giveaway ends on ${weekday}, ${date} ${month} ${year} ${hours}:${minutes}am`;
+
+// future time in milliseconds
+const futureTime = futureDate.getTime();
+
+function getRemainingTime(){
+
+}
+
+getRemainingTime();
