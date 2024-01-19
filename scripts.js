@@ -56,7 +56,13 @@ const t = futureTime - today;
 // 1d = 24hr 
 
 // values in ms
-const oneDay = 24*60*60*1000;
+const oneDay = 24 * 60 * 60 * 1000;
+const oneHour = 60 * 60 * 1000;
+const oneminute = 60 * 1000;
+// calculate all values
+let days = t/oneDay;
+days = Math.floor(days);
+let hours = (t%oneDay) /oneHour;
 }
 
 getRemainingTime();
